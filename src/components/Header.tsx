@@ -53,11 +53,11 @@ export default function Header({
           </div>
           <div className="flex flex-col justify-between bg-zinc-900/30 border border-zinc-900 rounded-xl p-4">
             <span className="font-mono text-[10px] tracking-wider text-zinc-500 uppercase">Artists</span>
-            <span className="font-serif text-2xl md:text-3xl text-white font-medium mt-1">5</span>
+            <span className="font-serif text-2xl md:text-3xl text-white font-medium mt-1">1</span>
           </div>
           <div className="flex flex-col justify-between bg-zinc-900/30 border border-zinc-900 rounded-xl p-4">
             <span className="font-mono text-[10px] tracking-wider text-zinc-500 uppercase">Lenses</span>
-            <span className="font-serif text-2xl md:text-3xl text-white font-medium mt-1">7</span>
+            <span className="font-serif text-2xl md:text-3xl text-white font-medium mt-1">1</span>
           </div>
         </div>
       </div>
