@@ -113,22 +113,15 @@ export default function App() {
       >
         <div className="flex flex-col gap-1.5">
           <span className="text-zinc-400 font-serif text-sm tracking-tight font-medium">
-            VISUAL ARCHIVISTS COLLABORATIVE
+            CAPTURING LIGHT BY DRVSTELLA
           </span>
           <span>
-            © 2026. All Rights Reserved. Produced under Creative Commons
-            licensing.
+            © 2026. All Rights Reserved.
           </span>
         </div>
         <div className="flex items-center gap-6">
-          <a
-            href="mailto:curator@minimal.co"
-            className="hover:text-white transition-colors"
-          >
-            CURATOR@MINIMAL.CO
-          </a>
           <span className="text-zinc-800">|</span>
-          <span className="text-zinc-600">BERLIN • TOKYO • NEW YORK</span>
+          <span className="text-zinc-600">INDIA</span>
         </div>
       </footer>
     </div>
