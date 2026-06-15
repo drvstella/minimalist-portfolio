@@ -93,7 +93,7 @@ export default function PhotoCard({ photo, onSelect, index, layoutMode }: PhotoC
           <div className="flex flex-col gap-1.5 text-xs text-zinc-300 pt-1 border-t border-white/10 mt-1">
             <span className="flex items-center gap-1">
               <Camera size={12} className="text-zinc-500" />
-              <span className="font-mono text-[10px]">{photo.settings.aperture} • {photo.settings.shutter} • ISO {photo.settings.iso} • {photo.settings.focalLength}</span>
+              <span className="font-mono text-[10px]">{photo.settings.focalLength}</span>
             </span>
           </div>
         </div>

@@ -249,8 +249,6 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
             </span>
             <span className="font-mono text-[10px] text-zinc-400 uppercase tracking-widest flex items-center gap-1.5">
               <span>{activePhoto.photographer}</span>
-              <span className="h-1 w-1 bg-zinc-600 rounded-full" />
-              <span>{activePhoto.settings.aperture} • {activePhoto.settings.shutter} • ISO {activePhoto.settings.iso}</span>
             </span>
           </div>
 
