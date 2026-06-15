@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { Camera } from "lucide-react";
 import { Photograph } from "../data";
 
 interface PhotoCardProps {
@@ -88,15 +87,7 @@ export default function PhotoCard({ photo, onSelect, index, layoutMode }: PhotoC
           {photo.title}
         </h3>
 
-        {/* Hidden parameters revealing smoothly on hover */}
-        <div className="h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-300 ease-out overflow-hidden">
-          <div className="flex flex-col gap-1.5 text-xs text-zinc-300 pt-1 border-t border-white/10 mt-1">
-            <span className="flex items-center gap-1">
-              <Camera size={12} className="text-zinc-500" />
-              <span className="font-mono text-[10px]">{photo.settings.focalLength}</span>
-            </span>
-          </div>
-        </div>
+
       </div>
     </motion.div>
   );
