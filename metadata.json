@@ -1,6 +1,0 @@
-{
-  "name": "Drvstella's portfolio",
-  "description": "A beautiful, dark-themed, responsive CSS grid-based photography portfolio featuring smooth layout animations, a fluid interactive lightbox, photo categories, Exif camera details, and lazy-loading optimizations.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
