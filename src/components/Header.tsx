@@ -41,7 +41,7 @@ export default function Header({
             <span className="italic text-zinc-400 font-light">Archivism</span>
           </h1>
           <p className="font-sans text-base text-zinc-400 font-light leading-relaxed max-w-xl">
-            A minimalist digital space honoring pristine raw geometry, cosmic wilderness, warm available light, and silent metropolitan moments. Each selection includes full Exif records.
+            A personal photography portfolio showcasing my perspective through architecture, landscapes, street scenes, astrophotography, and portraits — captured one frame at a time.
           </p>
         </div>
 
