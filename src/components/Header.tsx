@@ -22,7 +22,7 @@ export default function Header({
       {/* Upper Meta-Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-900 pb-5">
         <div className="flex items-center gap-2.5 font-mono text-[10px] sm:text-xs text-zinc-500 tracking-widest uppercase">
-          <span>EXHIBIT • MONOGRAPH SERIES</span>
+          <span>EXHIBIT • DRVSTELLASTUDIO</span>
           <span className="h-1.5 w-1.5 bg-zinc-700 rounded-full" />
           <span>EST. 2026</span>
         </div>
@@ -37,11 +37,11 @@ export default function Header({
         {/* Title */}
         <div className="lg:col-span-7 flex flex-col gap-3">
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white leading-[1.1]">
-            Visual <br className="hidden sm:inline" />
+            Stella <br className="hidden sm:inline" />
             <span className="italic text-zinc-400 font-light">Archivism</span>
           </h1>
           <p className="font-sans text-base text-zinc-400 font-light leading-relaxed max-w-xl">
-            A personal photography portfolio showcasing my perspective through architecture, landscapes, street scenes, astrophotography, and portraits — captured one frame at a time.
+            A minimalist digital space honoring pristine raw geometry, cosmic wilderness, warm available light, and silent metropolitan moments. Each selection includes full Exif records.
           </p>
         </div>
 
@@ -65,9 +65,9 @@ export default function Header({
       {/* INTERACTIVE FILTERS & CONTROLS BOX */}
       <div className="flex flex-col gap-6 pt-2">
         <div className="h-px bg-zinc-900 w-full" />
-        
+
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
-          
+
           {/* Category Selector Tabs */}
           <div className="flex flex-wrap items-center gap-1.5" id="category-filter-bar">
             {categories.map((cat) => (
@@ -75,11 +75,10 @@ export default function Header({
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 id={`cat-btn-${cat.toLowerCase()}`}
-                className={`px-4 py-2 rounded-full font-mono text-xs transition-colors duration-300 ${
-                  activeCategory === cat
-                    ? "bg-zinc-100 text-zinc-950 font-medium"
-                    : "bg-zinc-900/40 text-zinc-400 border border-zinc-900 hover:bg-zinc-900 hover:text-white"
-                }`}
+                className={`px-4 py-2 rounded-full font-mono text-xs transition-colors duration-300 ${activeCategory === cat
+                  ? "bg-zinc-100 text-zinc-950 font-medium"
+                  : "bg-zinc-900/40 text-zinc-400 border border-zinc-900 hover:bg-zinc-900 hover:text-white"
+                  }`}
               >
                 {cat}
               </button>
@@ -93,11 +92,10 @@ export default function Header({
               <button
                 onClick={() => setLayoutMode("bento")}
                 id="layout-bento-btn"
-                className={`p-2 rounded-full transition-all ${
-                  layoutMode === "bento"
-                    ? "bg-zinc-800 text-white"
-                    : "text-zinc-500 hover:text-zinc-300"
-                }`}
+                className={`p-2 rounded-full transition-all ${layoutMode === "bento"
+                  ? "bg-zinc-800 text-white"
+                  : "text-zinc-500 hover:text-zinc-300"
+                  }`}
                 title="Bento Mosaic Grid"
               >
                 <Layers size={14} />
@@ -107,11 +105,10 @@ export default function Header({
               <button
                 onClick={() => setLayoutMode("grid")}
                 id="layout-grid-btn"
-                className={`p-2 rounded-full transition-all ${
-                  layoutMode === "grid"
-                    ? "bg-zinc-800 text-white"
-                    : "text-zinc-500 hover:text-zinc-300"
-                }`}
+                className={`p-2 rounded-full transition-all ${layoutMode === "grid"
+                  ? "bg-zinc-800 text-white"
+                  : "text-zinc-500 hover:text-zinc-300"
+                  }`}
                 title="Equal Symmetric Grid"
               >
                 <Grid size={14} />
@@ -121,11 +118,10 @@ export default function Header({
               <button
                 onClick={() => setLayoutMode("list")}
                 id="layout-list-btn"
-                className={`p-2 rounded-full transition-all ${
-                  layoutMode === "list"
-                    ? "bg-zinc-800 text-white"
-                    : "text-zinc-500 hover:text-zinc-300"
-                }`}
+                className={`p-2 rounded-full transition-all ${layoutMode === "list"
+                  ? "bg-zinc-800 text-white"
+                  : "text-zinc-500 hover:text-zinc-300"
+                  }`}
                 title="Single Column list"
               >
                 <StretchHorizontal size={14} />
